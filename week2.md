@@ -202,4 +202,5 @@ CHIP DMux8Way {
     
 ```
 # 七段顯示器
+數位邏輯實習繪製
 ![](https://github.com/mozi5269/co110a/blob/master/%E4%B8%83%E6%AE%B5%E9%A1%AF%E7%A4%BA%E5%99%A8.png)

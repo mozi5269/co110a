@@ -26,40 +26,39 @@
 
 # Fill
 ```
-input 24576
-screen 16384~24576 8192
-JEQ if out = 0 jump
-```
-```
-0	@8192
-1	M=A
+//input 24576  
+//screen 16384 ~ 24576   8192
+//JEQ if out = 0 jump
 
-2	@24576
-3	D=M
+@8192
+M = A
 
-4	@16
-5	D;JEQ
+@24576
+D = M
 
-6	@8192  //black
-7	D=M
-8	M=M-1
-9	@0
-10	D;JEQ
-11	@16384
-12	A=D+A
-13	M=-1
-14	@6
-15	0;JMP
+@16
+D;JEQ
 
-16	@8192   //white
-17	D=M
-18	M=M-1
-19	@0
-20	D;JEQ
-21	@16384
-22	A=D+A
-23	M=0
-24	@16
-25	0;JMP
+@8192   //black
+D = M
+M = M - 1
+@0
+D;JEQ
+@16384
+A = D + A
+M = -1
+@6
+0;JMP
+
+@8192   //white
+D = M
+M = M - 1
+@0
+D;JEQ
+@16384
+A = D + A
+M = 0
+@16
+0;JMP
 ```
 
